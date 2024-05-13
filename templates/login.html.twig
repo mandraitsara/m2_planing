@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{%block body %}
+
+<div class="container">
+    <div class="row form-container p-3" style="margin:150px auto">
+        
+        <a href="{{path('home.plan_mariage')}}" class="go-back"><i class="fa-solid fa-arrow-left"></i></a>
+        <div class="col-md-6 p-3">
+            <form>
+                <div class="form-group login-bloc">
+                    <h2 class="text-center pt-5 pb-5"> <span><i class="fa-regular fa-user"></i></span>  Bienvenue</h2>
+                    <input type="text" class="form-control" placeholder="@Email"> <br>
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Mot de passe"> <br>
+                    <a href="#" class="btn-1-log mb-3">Connexion</a>
+                    <a href="#" class="btn-2-log">Annuler</a>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6 p-3 d-flex justify-content-center align-items-center">
+            <div class="svg-box">
+                <img src="{{asset('icons/couple-54.svg')}}" alt="form-svg">
+            </div>
+        </div>
+    </div>
+</div>   
+{%endblock%}
